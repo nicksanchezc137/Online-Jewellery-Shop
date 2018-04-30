@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="main.css">
+   <link href='http://fonts.googleapis.com/css?family=Lobster+Two:400,400italic' rel='stylesheet' type='text/css'>
+   <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+   <script type="text/javascript" src="handler.js"></script>
+    <script type="text/javascript" src="basket.js"></script>
+
+    <title>My collection Jewellery</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-company-red">
+      <a href="#" class="navbar-brand">My Collection Jewellery</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="shop.html" class="nav-link">Shop</a>
+            </li>
+             <li class="nav-item active">
+              <a href="basket.html" class="nav-link">Basket</a>
+            </li>
+            <li class="nav-item">
+              <a href="checkout.html" class="nav-link">Check Out</a>
+            </li>
+          </ul>
+          <div class="form-inline my-2 my-lg-0">
+            <input type="text" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" onclick="storeItemData()">Search</button>
+          </div>
+        </div>
+      </nav>
+
+      <div id = 'main4'>
+        
+        
+   <h2>Basket</h2>
+    <hr>
+    <div class="container">
+
+     
+      <div id = 'cart' class="row">
+      
+       
+    
+      
+    </div>
+  </div>
+  <hr>
+      <footer>
+        <p>&copy; Company 2018</p>
+      </footer>
+   </div>
+
+   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBZ2KsCZlgLisH6sSVPA9Nvu7YOYJkRxvQ",
+    authDomain: "my-african-jewellery.firebaseapp.com",
+    databaseURL: "https://my-african-jewellery.firebaseio.com",
+    projectId: "my-african-jewellery",
+    storageBucket: "",
+    messagingSenderId: "518299020234"
+  };
+  firebase.initializeApp(config);
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

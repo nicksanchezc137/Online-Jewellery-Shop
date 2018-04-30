@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
+    <link rel="stylesheet" href="main.css">
+   <link href='http://fonts.googleapis.com/css?family=Lobster+Two:400,400italic' rel='stylesheet' type='text/css'>
+   <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+    <script type="text/javascript" src="admin.js"></script>
+
+    <title>My collection Jewellery</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-company-red">
+      <a href="#" class="navbar-brand">My Collection Jewellery</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="shop.html" class="nav-link">Shop</a>
+            </li>
+             <li class="nav-item">
+              <a href="basket.html" class="nav-link">Basket</a>
+            </li>
+            <li class="nav-item">
+              <a href="checkout.html" class="nav-link">Check Out</a>
+            </li>
+
+          </ul>
+
+          <div class="form-inline my-2 my-lg-0">
+          <button id = 'signOut' class="btn btn-outline-success my-2 my-sm-0" onclick="signOut()">Sign Out</button>
+          </div>
+        </div>
+      </nav>
+      <div align = 'center'  id = 'signin'>
+         <input id = 'email' type="email"  placeholder="email" ><br><br>
+         <input id = 'password' type="password"  placeholder="password" ><br><br>
+         <button id = 'signin-button' class="btn btn-outline-success my-2 my-sm-0">Sign in</button>
+      </div>
+
+      <div id = 'main6' hidden="true">
+        
+        
+   <h2>Admin</h2>
+    <hr>
+    <div class="container">
+  
+     
+      <div id = 'additem' class="row">
+      <div class="si col-md-4">
+        <input id = 'item_info' type="text" class="form-control mr-sm-2" placeholder= "id,name,image-url,price" aria-label="item">
+      </div>
+       
+     <div class="si col-md-4">
+        <button id = 'save' class="btn btn-outline-success my-2 my-sm-0" onclick="">Save</button>
+      </div>
+            
+    </div>
+    <div align="center">
+    <h2>Items Details</h2>
+    </div>
+  </div>
+
+<div align = 'center' id = 'table-contents'>
+    
+    <table class = 'table'>
+    <thead>
+      <th>id</th>
+      <th>name</th>
+      <th>image</th>
+      <th>price</th>
+    </thead>
+    <tbody id = 'table-body'>
+      
+    </tbody>
+  </table>
+</div>
+<div align="center">
+   <h2>Orders</h2> 
+</div>
+
+<div align = 'center' id = 'table-contents2'>
+    
+    <table class = 'table'>
+    <thead>
+      <th>name</th>
+      <th>image</th>
+      <th>price</th>
+      <th>Order Status</th>
+    </thead>
+    <tbody id = 'table-body'>
+      
+    </tbody>
+  </table>
+</div>
+
+
+   </div>
+ 
+ 
+   
+
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBZ2KsCZlgLisH6sSVPA9Nvu7YOYJkRxvQ",
+    authDomain: "my-african-jewellery.firebaseapp.com",
+    databaseURL: "https://my-african-jewellery.firebaseio.com",
+    projectId: "my-african-jewellery",
+    storageBucket: "my-african-jewellery.appspot.com",
+    messagingSenderId: "518299020234"
+  };
+  firebase.initializeApp(config);
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
